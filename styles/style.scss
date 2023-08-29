@@ -1,0 +1,141 @@
+@import "reset.scss";
+@import "mixin.scss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+$background: hsla(26, 40%, 92%, 1);
+$card: white;
+$description : rgba(0, 0, 0, 0.6);
+$cta : hsl(158%, 36%, 37%);
+
+body {
+    background-color: $background;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+    font-size: 14px;
+
+}
+
+.card {
+    margin: 28px 0 0 0;
+    background-color: $card;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px 0 16px;
+
+    @include devices(desktop) {
+        width: 600px;
+        height: 450px;
+        flex-direction: row;
+    }
+
+
+    &__banner {
+        &-mobile {
+            height: 240px;
+            object-fit: cover;
+
+            @include devices(desktop) {
+                display: none;
+            }
+        }
+
+        &-desktop {
+            display: none;
+
+            @include devices(desktop) {
+                object-fit: cover;
+                display: inline-block;
+
+            }
+        }
+    }
+
+    &__info {
+        margin: 27px 24px 24px 24px;
+    }
+
+    &__h2 {
+        font-size: 12px;
+        font-weight: 400;
+        color: $description;
+        text-transform: uppercase;
+        letter-spacing: 0.325rem;
+    }
+
+    &__h1 {
+        font-size: 34px;
+        line-height: 34px;
+        font-family: 'Fraunces', serif;
+        margin: 18px 0 26px 0;
+    }
+
+    &__p {
+        color: $description;
+        line-height: 23px;
+
+        @include devices(desktop) {
+            margin: 0 0 0 0;
+        }
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        margin: 32px 0 24px 0;
+
+        &-new {
+            font-size: 36px;
+            font-family: 'Fraunces', serif;
+            color: $cta
+        }
+
+        &-old {
+            color: $description;
+            text-decoration-line: line-through;
+        }
+
+    }
+
+    &__buy {
+        color: $card;
+        font-size: 14px;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        padding: 16px 0 16px 0;
+        border-radius: 6px;
+        text-align: center;
+        align-items: center;
+        background-color: $cta;
+
+        &:hover {
+            background-color: darken($cta, 15%);
+        }
+    }
+
+}
+
+.attribution {
+    text-align: center;
+    margin: 0 0 16px 0;
+
+    & a {
+        font-weight: 800;
+        color: $cta;
+    }
+}
+
+.fa-cart-shopping {
+    font-size: 16px;
+    margin: 0 10px 0 0;
+}
