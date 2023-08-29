@@ -2,8 +2,8 @@
 
 ### On live !
 
-![This was made on live on twitch.tv](https://www.twitch.tv/octavegraf). Come and say hi 👋 !
-[Twitch live](./design/twitch.jpg)
+[This was made on live on twitch.tv](https://www.twitch.tv/octavegraf). Come and say hi 👋 !
+![Twitch live](./design/twitch.jpg)
 
 ### Screenshot
 
