@@ -11,4 +11,4 @@
 
 ### Link
 
-[Live site URL]([https://octavegraf.github.io/qr-code-component-main/](https://octavegraf.github.io/product-preview-card-component-main/))
+[Live Site](https://octavegraf.github.io/product-preview-card-component-main/)
