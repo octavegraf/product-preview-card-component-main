@@ -70,13 +70,12 @@ body {
 }
 
 .card {
-  margin: 28px 0 0 0;
+  margin: 28px 16px 0 16px;
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin: 0 16px 0 16px;
 }
 @media only screen and (min-width: 632px) {
   .card {
@@ -105,6 +104,11 @@ body {
 }
 .card__info {
   margin: 27px 24px 24px 24px;
+}
+@media only screen and (min-width: 632px) {
+  .card__info {
+    margin: 34px 32px 0 32px;
+  }
 }
 .card__h2 {
   font-size: 12px;

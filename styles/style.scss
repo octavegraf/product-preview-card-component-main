@@ -21,14 +21,12 @@ body {
 }
 
 .card {
-    margin: 28px 0 0 0;
+    margin: 28px 16px 0 16px;
     background-color: $card;
     border-radius: 8px;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
-    margin: 0 16px 0 16px;
 
     @include devices(desktop) {
         width: 600px;
@@ -60,6 +58,9 @@ body {
 
     &__info {
         margin: 27px 24px 24px 24px;
+        @include devices(desktop) {
+            margin: 34px 32px 0 32px;
+        }
     }
 
     &__h2 {
