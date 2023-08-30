@@ -5,7 +5,7 @@
 $background: hsla(26, 40%, 92%, 1);
 $card: white;
 $description : rgba(0, 0, 0, 0.6);
-$cta : hsl(158%, 36%, 37%);
+$cta : hsl(158, 36%, 37%);
 
 body {
     background-color: $background;
@@ -110,7 +110,10 @@ body {
         color: $card;
         font-size: 14px;
         font-weight: 700;
-        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         padding: 16px 0 16px 0;
         border-radius: 6px;
@@ -121,6 +124,10 @@ body {
         &:hover {
             background-color: darken($cta, 15%);
         }
+    }
+
+    &__cart {
+        margin: 0 10px 0 0;
     }
 
 }
